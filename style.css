@@ -1,0 +1,75 @@
+/* plumbers template stylesheet */
+
+/* global styles */
+
+html,
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header content */
+
+.header-content{
+    background-color: blue;
+    height: 20vh;
+}
+
+.header-brand{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-logo{
+    margin: 20px
+}
+
+.brand-socials{
+    margin: 20px
+}
+
+.social-brands{
+    height: 24px;
+    width: auto;
+}
+
+.header-navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+}
+
+.navbar-menu-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-menu-item a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* main content */
+
+.main-content{
+    background-color: green;
+    min-height: 90vh;
+}
+
+/* footer content */
+
+.footer-content{
+    background-color: red;
+    height: 10vh;
+}
