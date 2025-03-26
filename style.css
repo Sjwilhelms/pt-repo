@@ -2,20 +2,58 @@
 
 /* global styles */
 
+:root {
+    
+    /* Primary brand colors */
+    --color-primary: #4361ee;
+    --color-primary-light: #4895ef;
+    --color-primary-dark: #3f37c9;
+    
+    /* Secondary colors */
+    --color-secondary: #f72585;
+    --color-secondary-light: #ff4d6d;
+    --color-secondary-dark: #b5179e;
+    
+    /* Neutral colors */
+    --color-text: #212529;
+    --color-bg: #ffffff;
+    --color-gray-100: #f8f9fa;
+    --color-gray-200: #e9ecef;
+    --color-gray-300: #dee2e6;
+    --color-gray-400: #ced4da;
+    --color-gray-500: #adb5bd;
+    --color-gray-600: #6c757d;
+    --color-gray-700: #495057;
+    --color-gray-800: #343a40;
+    --color-gray-900: #212529;
+    
+    /* Semantic colors */
+    --color-success: #2a9d8f;
+    --color-error: #e63946;
+    --color-warning: #f9c74f;
+    --color-info: #4cc9f0;
+}
+
 html,
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: var(--color-text);
+    background-color: var(--color-bg);
 }
 
-
+.hidden{
+    display: none;
+}
 
 /* header content */
 
 .header-content{
-    height: 20vh;
+    border-bottom: 1px solid var(--color-error);
 }
+
+/* header brand and social links */
 
 .header-brand{
     display: flex;
@@ -23,8 +61,10 @@ body{
     align-items: center;
 }
 
-.brand-logo{
-    margin: 20px
+.brand-logo a{
+    margin: 20px;
+    text-decoration: none;
+    color: inherit;    
 }
 
 .brand-socials{
@@ -35,9 +75,25 @@ body{
 
 .social-brands{
     height: 24px;
-    width: auto;
     pointer-events: none;
 }
+
+/* header contact info */
+
+.header-call-now{
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    padding: .5rem;
+}
+
+.call-now-item a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* header navigation bar */
 
 .header-navbar{
     display: flex;
@@ -49,26 +105,54 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
     list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
 
 .navbar-menu-item{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    flex-grow: 1;
+    padding: 2rem;
+    border: 1px solid var(--color-gray-100);
 }
 
 .navbar-menu-item a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     color: inherit;
 }
 
+
 /* main content */
 
-.main-content{
-    min-height: 90vh;
+/* hero image section */ 
+
+.hero-image{
+    background-image: url('assets/images/kitchenRelaxation.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    width: 100%;
 }
+
+/* accreditation section */
+
+/* testimonial section */
+
+/* contact section */
 
 /* footer content */
 
