@@ -145,9 +145,9 @@ body{
 .hero-image{
     background-image: url('assets/images/kitchenRelaxation.png');
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
-    height: 60vh;
+    height: 80vh;
     width: 100%;
 }
 
