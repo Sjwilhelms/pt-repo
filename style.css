@@ -78,6 +78,11 @@ body{
     pointer-events: none;
 }
 
+.social-brands svg{
+    fill: #223ea4;
+
+}
+
 /* header contact info */
 
 .header-call-now{
@@ -154,9 +159,9 @@ body{
 /* accreditation section */
 
 .accreditation{
-    height: 10vh;
     width: 100%;
-    padding: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -168,7 +173,8 @@ body{
     width: 80vw;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .accreditation-logo{
@@ -179,9 +185,9 @@ body{
 /* testimonial section */
 
 .testimonials{
-    height: 10vh;
     width: 100%;
-    padding: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -193,7 +199,8 @@ body{
     width: 50vw;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .review-logo{
@@ -208,7 +215,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50w;
+    width: 50vw;
 }
 
 /* footer content */
