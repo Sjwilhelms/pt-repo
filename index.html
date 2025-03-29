@@ -103,11 +103,11 @@
             </div>
         </section>
 
-        <section class="contact">
+        <section class="form-container">
             <form action="" class="contact">
                 <h3>Get in touch with us</h3>
 
-                <div>
+                <div class="form-input-1">
                     <div>
                         <label for="name">Name:</label>
                         <input type="text" name="name" id="name">
@@ -118,7 +118,7 @@
                     </div>
                 </div>
 
-                <div>
+                <div class="form-input-2">
                     <div>
                         <label for="postcode">Postcode</label>
                         <input type="text" name="postcode" id="postcode">
@@ -129,16 +129,50 @@
                     </div>
                 </div>
 
-                <div>
-                    <input type="checkbox" name="" id="">
-                    <input type="checkbox" name="" id="">
-                    <input type="checkbox" name="" id="">
-                    <input type="checkbox" name="" id="">
+                <div class="form-service-checkbox">
+                    <div>
+                        <label for="bathrooms">Bathrooms</label>
+                        <input type="checkbox" name="bathrooms" id="bathrooms">
+                    </div>
+                    <div>
+                        <label for="kitchens">Kitchens</label>
+                        <input type="checkbox" name="kitchens" id="kitchens">
+                    </div>
+                    <div>
+                        <label for="radiators">Radiators</label>
+                        <input type="checkbox" name="radiators" id="radiators">
+                    </div>
+                    <div>
+                        <label for="gas-boilers-installation">Gas boilers (installation)</label>
+                        <input type="checkbox" name="gas-boilers-installation" id="gas-boilers-installation">
+                    </div>
+                    <div>
+                        <label for="gas-boilers-servicing">Gas boilers (servicing)</label>
+                        <input type="checkbox" name="gas-boilers-servicing" id="gas-boilers-servicing">
+                    </div>
+                    <div>
+                        <label for="unvented-cylinders">Unvented cylinders</label>
+                        <input type="checkbox" name="unvented-cylinders" id="unvented-cylinders">
+                    </div>
+                    <div>
+                        <label for="underfloor-heating">Underfloor heating</label>
+                        <input type="checkbox" name="underfloor-heating" id="underfloor-heating">
+                    </div>
+                    <div>
+                        <label for="air-source-heating">Air-source heating</label>
+                        <input type="checkbox" name="air-source-heating" id="air-source-heating">
+                    </div>
+                    <div>
+                        <label for="ground-source-heating">Ground-source heating</label>
+                        <input type="checkbox" name="ground-source-heating" id="ground-source-heating">
+                    </div>
                 </div>
 
-                <label for="message">Type your message</label>
-                <textarea name="message" id="message"></textarea>
-                <input type="submit" value="Submit">
+                <div class="form-message">
+                    <label for="message">Type your message</label>
+                    <textarea name="message" id="message" rows="10" cols="50"></textarea>
+                    <input type="submit" value="Submit">
+                </div>
             </form>
         </section>
     </main>

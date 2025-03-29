@@ -2,6 +2,8 @@
 
 /* global styles */
 
+/* colours */
+
 :root {
     
     /* Primary brand colors */
@@ -34,13 +36,35 @@
     --color-info: #4cc9f0;
 }
 
+/* fonts */
+
+@font-face {
+    font-family: "Lato";
+    src: url('assets/fonts/Lato-Regular.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url('assets/fonts/Roboto-Regular.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 html,
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", Arial, sans-serif;
     color: var(--color-text);
     background-color: var(--color-bg);
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Lato", Arial, sans-serif;
 }
 
 .hidden{
@@ -210,12 +234,47 @@ body{
 
 /* contact section */
 
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-gray-700);
+}
+
 .contact{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50vw;
+    width: 70vw;
+    background-color: var(--color-gray-500);
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.form-input-1{
+    display: flex;
+    padding-top: 1rem;
+}
+
+.form-input-2{
+    display: flex;
+    padding-top: 1rem;
+}
+
+.form-service-checkbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-top: 1rem;
+}
+
+.form-message{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
 }
 
 /* footer content */
